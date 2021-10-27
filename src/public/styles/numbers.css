@@ -1,0 +1,107 @@
+.card-play .number {
+    margin: auto;
+}
+
+.card-play .number .number-render {
+    display: block;
+    max-width: 200px;
+}
+
+.card-play .number .number-render h1 {
+    font-size: 100px;
+    line-height: 80px;
+    margin: auto;
+}
+
+.card-play .number i {
+    font-size: 25px;
+    margin: 10px;
+}
+
+.sun {
+    color: yellow;
+}
+
+.apple {
+    color: red;
+}
+
+.atom {
+    color: cornflowerblue;
+}
+
+.ball {
+    color: orange;
+}
+
+.bus {
+    color: blue;
+}
+
+.card-i {
+    color: greenyellow;
+}
+
+.cloud {
+    color: dodgerblue;
+}
+
+.cookie {
+    color: chocolate;
+}
+
+.fish {
+    color: cadetblue;
+}
+
+.flag {
+    color: darkblue;
+}
+
+/* play color */
+
+.numbers {
+    margin: 1rem;
+    text-align: center;
+}
+
+.sub-menu {
+    padding: 0 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub-menu button {
+    margin: 1rem 2rem;
+}
+
+.sub-menu h1 {
+    font-size: 22px;
+}
+
+/* inputs */
+
+.inputs {
+    display: block;
+    margin: 1rem 0;
+}
+
+.inputs .btn-second {
+    position: relative;
+    bottom: -1rem;
+    right: -1.5rem;
+}
+
+#input {
+    margin: auto;
+    background: none;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 17px;
+    color: white;
+    font-weight: bold;
+    border-bottom: 1px solid white;
+    max-width: 180px;
+}

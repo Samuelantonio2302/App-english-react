@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+@import './color.css';
+@import './numbers.css';
+@import './alphabet.css';
+@import './global.css';
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #1B1B26;
+    color: #ffffff;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #494966;
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    height: 100vh;
+    background: url('../assets/fondos/fondo.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+header .contenedor-header {
+    text-align: center;
+    padding: 6rem 0;
+}
+
+header .contenedor-header h1 {
+    font-size: 70px;
+    background: linear-gradient(259.11deg, #40c3fbe6 1.63%, #c070ffe6 45.36%, #ffc671e6 84.75%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+header .contenedor-header p {
+    margin-bottom: 3rem
+}
+
+.wrapp {
+    margin: 1rem 3rem;
+}
+
+.cards {
+    display: block;
+}
+
+.cards .card {
+    height: 500px;
+    border-radius: 50px;
+    margin: 2rem 0;
+    box-shadow: -1px 3px 27px 0px rgba(0, 0, 0, 0.75);
+}
+
+.cards .card .card-image {
+    height: 250px;
+    background: url('https://image.freepik.com/vector-gratis/paisaje-rural_331723-9.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.cards .card .card-content {
+    padding: 1rem;
+}
+
+.cards .card .card-content h1 {
+    font-size: 50px;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+
+.cards .card .card-content p {
+    font-size: 15px;
+    margin-bottom: 3rem;
+}
+
+.cards .card .card-content .btn-special {
+    padding: 1rem 3rem;
+    margin: auto;
+}
+
+.banner {
+    display: block;
+    margin: 4rem 0;
+}
+
+.banner .banner-content {
+    width: 100%;
+    display: block;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.banner .banner-content h1 {
+    margin: auto;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 2rem;
+}
+
+.banner-image {
+    width: 100%;
+}
+
+.banner-image img {
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+    .banner {
+        display: flex;
+        margin: 2rem 0;
+    }
+    .banner .banner-content {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .banner .banner-content h1 {
+        line-height: 40px;
+        font-size: 50px;
+        margin-bottom: 2rem;
+    }
+}

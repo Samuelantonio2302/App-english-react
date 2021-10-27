@@ -1,0 +1,11 @@
+.alphabet {
+    padding: 1rem 0;
+    margin: auto;
+    text-align: center;
+}
+
+.alphabet-render h1 {
+    font-size: 100px;
+    line-height: 80px;
+    margin: 1rem auto 3rem;
+}
