@@ -6,7 +6,7 @@ import { Header } from '../components/Header';
 const plays = [
     { 'title': 'Colors', "text": "Que estas esperando para empezar a practicar los colore", 'url': '/colors' },
     { 'title': 'Numbers', "text": "Que estas esperando para empezar a practicar los colore", 'url': '/numbers' },
-    { 'title': 'Alfabet', "text": "Que estas esperando para empezar a practicar los colore", 'url': '/alphabet' }
+    { 'title': 'Alphabet', "text": "Que estas esperando para empezar a practicar los colore", 'url': '/alphabet' }
 ];
 function Home() {
     return (

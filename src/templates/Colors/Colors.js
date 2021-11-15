@@ -1,10 +1,10 @@
 import React from 'react'
-import { Menu } from '../components/Menu'
-import { Context } from '../utils/context'
+import { Menu } from '../../components/Menu'
+import { Context } from '../../utils/context'
 
 function Colors() {
     const {
-        colors,
+        Colors,
     } = React.useContext(Context)
 
     return (
@@ -13,7 +13,7 @@ function Colors() {
             <diV className="colors">
                 <div className="color">
                     <div className="grid">
-                        {colors.map(color => (
+                        {Colors.map(color => (
                             <div class="card-play">
                                 <div class="card-color" style={{ backgroundColor: color.color }}>
                                     <h1>{color.name}</h1>

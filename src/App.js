@@ -7,11 +7,11 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-import { Colors } from './templates/Colors';
-import { Numbers } from './templates/Numbers';
-import { Alphabet } from './templates/Alphabet'
-import { ColorPlay } from './templates/ColorsPlay';
-import { NumberPlay } from './templates/Numberplay';
+import { Colors } from './templates/Colors/Colors';
+import { Numbers } from './templates/Numbers/Numbers';
+import { Alphabet } from './templates/Alphabet/Alphabet'
+import { ColorPlay } from './templates/Colors/ColorsPlay';
+import { NumberPlay } from './templates/Numbers/Numberplay';
 
 function App() {
   return (
@@ -21,6 +21,7 @@ function App() {
         <Route exact path="/colors" component={Colors}></Route>
         <Route exact path="/numbers" component={Numbers}></Route>
         <Route exact path="/alphabet" component={Alphabet}></Route>
+        <Route exact path="/alphabet/play" component={Alphabet}></Route>
         <Route exact path="/colors/play" component={ColorPlay}></Route>
         <Route exact path="/number/play" component={NumberPlay}></Route>
       </Switch>

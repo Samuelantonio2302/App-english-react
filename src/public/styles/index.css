@@ -33,9 +33,6 @@ a {
 
 header {
     height: 100vh;
-    background: url('../assets/fondos/fondo.png') no-repeat;
-    background-position: center;
-    background-size: cover;
 }
 
 header .contenedor-header {
@@ -44,18 +41,18 @@ header .contenedor-header {
 }
 
 header .contenedor-header h1 {
-    font-size: 70px;
+    font-size: 80px !important;
     background: linear-gradient(259.11deg, #40c3fbe6 1.63%, #c070ffe6 45.36%, #ffc671e6 84.75%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 header .contenedor-header p {
-    margin-bottom: 3rem
+    margin-bottom: 9rem
 }
 
 .wrapp {
-    margin: 1rem 3rem;
+    margin: 3rem 1rem;
 }
 
 .cards {
@@ -124,6 +121,12 @@ header .contenedor-header p {
 }
 
 @media only screen and (min-width: 768px) {
+    header .contenedor-header h1 {
+        font-size: 90px;
+    }
+    .wrapp {
+        margin: 3rem 5rem;
+    }
     .cards {
         display: grid;
         grid-template-columns: repeat(3, 1fr);

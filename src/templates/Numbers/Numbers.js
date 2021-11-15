@@ -1,11 +1,11 @@
 import React from 'react'
-import { Menu } from '../components/Menu'
-import { Context } from '../utils/context'
+import { Menu } from '../../components/Menu'
+import { Context } from '../../utils/context'
 
 function Numbers() {
     const {
-        numbers,
-        numbersLarge
+        Numbers,
+        NumbersLarge
     } = React.useContext(Context)
 
     return (
@@ -14,7 +14,7 @@ function Numbers() {
             <div className="numbers">
                 <div class="wrapp">
                     <div class="grid">
-                        {numbers.map(numb => (
+                        {Numbers.map(numb => (
                             <div class="card-play">
                                 <div class="number">
                                     <div class="number-render">
@@ -32,7 +32,7 @@ function Numbers() {
                     </div>
 
                     <div className="grid">
-                        {numbersLarge.map(numb => (
+                        {NumbersLarge.map(numb => (
                             <div class="card-play">
                                 <div class="number">
                                     <div class="number-render">

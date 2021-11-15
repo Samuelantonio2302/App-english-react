@@ -1,19 +1,12 @@
-.card-play .number {
+.number {
+    text-align: center;
+}
+.number .number-render h1 {
+    font-size: 10rem;
     margin: auto;
 }
 
-.card-play .number .number-render {
-    display: block;
-    max-width: 200px;
-}
-
-.card-play .number .number-render h1 {
-    font-size: 100px;
-    line-height: 80px;
-    margin: auto;
-}
-
-.card-play .number i {
+.number i {
     font-size: 25px;
     margin: 10px;
 }
@@ -61,36 +54,30 @@
 /* play color */
 
 .numbers {
+    display: block;
     margin: 1rem;
     text-align: center;
 }
-
 .sub-menu {
     padding: 0 1rem;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
+    text-align:right;
 }
 
 .sub-menu button {
     margin: 1rem 2rem;
 }
 
-.sub-menu h1 {
-    font-size: 22px;
-}
-
 /* inputs */
 
 .inputs {
-    display: block;
+    display: flex;
+    flex-direction: column;
     margin: 1rem 0;
 }
 
 .inputs .btn-second {
     position: relative;
-    bottom: -1rem;
-    right: -1.5rem;
+    margin: 2rem auto;
 }
 
 #input {
