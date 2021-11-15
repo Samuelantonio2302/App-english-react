@@ -3,13 +3,13 @@ import { Menu } from '../../components/Menu';
 import { Context } from '../../utils/context'
 
 function ColorPlay() {
-    const {generateColors, itemsColors} = React.useContext(Context)
+    const {generateColors} = React.useContext(Context)
     return (
         <React.Fragment>
         <Menu text="What´s Color?"/>
-            <div class="colors-play" id="play">
-                <div class="submenu">
-                    <button type="button" class="btn-special start" onClick={generateColors}>Start</button>
+            <div className="colors-play" id="play">
+                <div className="submenu">
+                    <button type="button" className="btn-special start" onClick={generateColors}>Start</button>
                 </div>
                 {/* <div class="selectColor" style={{ backgroundColor: element.color }}></div>
                 <div class="options">
