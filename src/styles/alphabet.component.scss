@@ -1,0 +1,11 @@
+.alphabet{
+    text-align: center;
+}
+.alphabet-component{
+    display: flex;
+    justify-content: space-between;
+    .alphabet-letter{
+        text-transform: uppercase;
+        font-size: 40px;
+    }
+}

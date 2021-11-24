@@ -1,12 +1,13 @@
 import React from 'react'
-import { Card } from '../components/Card';
+import { v4 as uuid } from 'uuid'
+import { Card } from '../components/CardHome';
 import { Cards } from '../components/Cards';
 import { Header } from '../components/Header';
 
 const plays = [
-    { 'title': 'Colors', "text": "Que estas esperando para empezar a practicar los colore", 'url': '/colors' },
-    { 'title': 'Numbers', "text": "Que estas esperando para empezar a practicar los colore", 'url': '/numbers' },
-    { 'title': 'Alphabet', "text": "Que estas esperando para empezar a practicar los colore", 'url': '/alphabet' }
+    { 'title': 'Colors', "text": "Que estas esperando para empezar a practicar los colores", 'url': '/colors' },
+    { 'title': 'Numbers', "text": "Que estas esperando para empezar a practicar los numeros", 'url': '/numbers' },
+    { 'title': 'Alphabet', "text": "Que estas esperando para empezar a practicar los alfabeto", 'url': '/alphabet' }
 ];
 function Home() {
     return (
@@ -15,6 +16,7 @@ function Home() {
             <Cards>
                 {plays.map(play => (
                     <Card
+                        key={uuid}
                         title={play.title}
                         text={play.text}
                         url={play.url} />

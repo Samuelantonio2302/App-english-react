@@ -1,8 +1,8 @@
-const sun = 'fas fa-sun sun';
-const apple = 'fas fa-apple-alt apple';
-const atom = 'fas fa-atom atom';
-const ball = 'fas fa-basketball-ball ball';
-const bus = 'fas fa-bus bus';
+const sun = 'fas fa-sun y';
+const apple = 'fas fa-apple-alt r';
+const atom = 'fas fa-atom g';
+const ball = 'fas fa-basketball-ball o';
+const bus = 'fas fa-bus b';
 
 export const NumbersLarge = [
     { 'number': '20', 'name': 'Twenty' },
@@ -16,16 +16,16 @@ export const NumbersLarge = [
     { 'number': '100', 'name': 'One hundred' },
 ]
 export const Numbers = [
-    { 'number': '1', 'name': 'One', 'class': [sun] },
-    { 'number': '2', 'name': 'Two', 'class': [apple, apple] },
-    { 'number': '3', 'name': 'Three', 'class': [atom, atom, atom] },
-    { 'number': '4', 'name': 'Four', 'class': [ball, ball, ball, ball] },
-    { 'number': '5', 'name': 'Five', 'class': [bus, bus, bus, bus, bus] },
-    { 'number': '6', 'name': 'Six', 'class': [apple, apple, apple, apple, apple, apple] },
-    { 'number': '7', 'name': 'Seven', 'class': [atom, atom, atom, atom, atom, atom, atom] },
-    { 'number': '8', 'name': 'Eight', 'class': [sun, sun, sun, sun, sun, sun, sun, sun] },
-    { 'number': '9', 'name': 'Nine', 'class': [bus, bus, bus, bus, bus, bus, bus, bus, bus] },
-    { 'number': '10', 'name': 'Ten', 'class': [ball, ball, ball, ball, ball, ball, ball, ball, ball, ball] },
+    { 'number': '1', 'name': 'One', 'color': 'y', 'class': [sun] },
+    { 'number': '2', 'name': 'Two', 'color': 'r', 'class': [apple, apple] },
+    { 'number': '3', 'name': 'Three', 'color': 'g', 'class': [atom, atom, atom] },
+    { 'number': '4', 'name': 'Four', 'color': 'o', 'class': [ball, ball, ball, ball] },
+    { 'number': '5', 'name': 'Five', 'color': 'b', 'class': [bus, bus, bus, bus, bus] },
+    { 'number': '6', 'name': 'Six', 'color': 'r', 'class': [apple, apple, apple, apple, apple, apple] },
+    { 'number': '7', 'name': 'Seven', 'color': 'g', 'class': [atom, atom, atom, atom, atom, atom, atom] },
+    { 'number': '8', 'name': 'Eight', 'color': 'y', 'class': [sun, sun, sun, sun, sun, sun, sun, sun] },
+    { 'number': '9', 'name': 'Nine', 'color': 'b', 'class': [bus, bus, bus, bus, bus, bus, bus, bus, bus] },
+    { 'number': '10', 'name': 'Ten', 'color': 'o', 'class': [ball, ball, ball, ball, ball, ball, ball, ball, ball, ball] },
 ]
 export const Colors = [
     { 'color': 'White', "name": "White" },

@@ -1,31 +1,27 @@
 import React from 'react';
-import './public/styles/index.css'
-import { Home } from './templates/Home';
-
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-} from "react-router-dom";
-import { Colors } from './templates/Colors/Colors';
-import { Numbers } from './templates/Numbers/Numbers';
-import { Alphabet } from './templates/Alphabet/Alphabet'
-import { ColorPlay } from './templates/Colors/ColorsPlay';
-import { NumberPlay } from './templates/Numbers/Numberplay';
+import { Routes, Route } from "react-router-dom";
+import { Home } from './pages/Home';
+import { Colors } from './pages/Colors/Colors';
+import { Numbers } from './pages/Numbers/Numbers';
+import { Alphabet } from './pages/Alphabet/Alphabet'
+import { ColorPlay } from './pages/Colors/ColorsPlay';
+import { NumberPlay } from './pages/Numbers/Numberplay';
+import { Desarrollo } from './pages/desarrollo';
+import { PageNotFound } from './pages/PageNotFound';
 
 function App() {
   return (
-    <Router>
-      <Switch>
-        <Route exact path="/" component={Home}></Route>
-        <Route exact path="/colors" component={Colors}></Route>
-        <Route exact path="/numbers" component={Numbers}></Route>
-        <Route exact path="/alphabet" component={Alphabet}></Route>
-        <Route exact path="/alphabet/play" component={Alphabet}></Route>
-        <Route exact path="/colors/play" component={ColorPlay}></Route>
-        <Route exact path="/number/play" component={NumberPlay}></Route>
-      </Switch>
-    </Router>
+    <Routes>
+      <Route path="/" element={<Home />}></Route>
+      <Route path="/colors" element={<Colors />}></Route>
+      <Route path="/numbers" element={<Numbers />}></Route>
+      <Route path="/alphabet" element={<Alphabet />}></Route>
+      <Route path="/alphabet/play" element={<Alphabet />}></Route>
+      <Route path="/colors/play" element={<ColorPlay />}></Route>
+      <Route path="/number/play" element={<NumberPlay />}></Route>
+      <Route path="/desarrollo" element={<Desarrollo />}></Route>
+      <Route path="*" element={<PageNotFound />}></Route>
+    </Routes>
   );
 }
 

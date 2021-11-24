@@ -18,7 +18,7 @@ function Provider(props) {
     }
     const [Number, setNumber] = React.useState([])
     const [onvalue, setValue] = React.useState()
-    const generateNumber = () =>{
+    const generateNumber = () => {
         setNumber(Numbers[Math.floor(Math.random() * Numbers.length)])
     }
     return (

@@ -1,0 +1,146 @@
+$primary: #1B1B26;
+$secondary: #40C3FBE6;
+$shadow: -1px 3px 27px 0px rgba(0, 0, 0, 0.75);
+$linear-gradient: linear-gradient(259.11deg, #40c3fbe6 1.63%, #c070ffe6 45.36%, #ffc671e6 84.75%);
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: $primary;
+    color: #ffffff;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #494966;
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapp {
+    margin: 1rem 4rem;
+}
+
+.header {
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    .contenedor-header {
+        h1 {
+            font-size: 80px !important;
+            background: $linear-gradient;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p {
+            padding-bottom: 4rem;
+        }
+    }
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.card {
+    box-sizing: border-box;
+    padding: 2rem 1rem;
+    border-radius: 20px;
+    box-shadow: $shadow;
+
+    .card-content {
+        h1 {
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+
+    a {
+        color: white;
+        margin: auto 0;
+        padding: 0.5rem;
+        border-radius: 20px;
+
+        &:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+    }
+}
+
+.footer {
+    text-align: center;
+    margin-top: 3rem;
+
+    p {
+        color: rgba(255, 255, 255, 0.6);
+
+        a {
+            color: $secondary;
+        }
+    }
+}
+
+.btn {
+    background: $linear-gradient;
+    color: $primary;
+    padding: 1rem 4rem;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.btn-c {
+    margin: 1rem;
+    font-weight: bold;
+    font-size: 18px;
+    color: $secondary;
+}
+
+.message{
+    background: #0099FF;
+    box-shadow: 0px 21px 30px -24px rgba(0,153,255,1);
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 10px;
+}
+@media only screen and (max-width: 600px) {
+    .wrapp{
+        margin: 1rem;
+    }
+    .cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .footer{
+        font-size: 14px;
+    }
+}

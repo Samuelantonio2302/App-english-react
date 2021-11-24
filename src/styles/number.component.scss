@@ -1,0 +1,40 @@
+.numbers{
+    text-align: center;
+}
+.number-component {
+    display: flex;
+    justify-content: space-between;
+
+    .number-render {
+        display: flex;
+        flex-direction: row;
+        h1{
+            font-size: 70px;
+        }
+        div{
+            margin: auto 2rem;
+            i{
+                font-size: 27px;
+                margin: 0 .5rem;
+            }
+        }
+    }
+    .name h2{
+        text-decoration: overline;
+    }
+}
+.y{
+    color: yellow;
+}
+.r{
+    color: red;
+}
+.b{
+    color: blue;
+}
+.g{
+    color: green;
+}
+.o{
+    color: orangered;
+}
